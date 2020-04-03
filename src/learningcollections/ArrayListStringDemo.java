@@ -2,6 +2,7 @@ package learningcollections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.ListIterator;
 import learningcollections.entity.Person;
 
@@ -11,11 +12,24 @@ import learningcollections.entity.Person;
  */
 public class ArrayListStringDemo {
     
-    static ArrayList<String> strings = new ArrayList<>();
-    static ArrayList<Person> persons = new ArrayList<>();
+    static List<String> strings = new ArrayList<>();
+    static List<Person> persons = new ArrayList<>();
     
     public static void main(String[] args){
+        strings.add(0, "test");
+        strings.add("hello");
+        strings.contains("test");
         
+        List<String> elems = new ArrayList<>();
+        elems.add("test");
+        elems.add("Test 2");
+        
+        boolean contains = strings.containsAll(elems);
+        String s = strings.get(0);
+        
+        boolean deleted = strings.remove("test"); // true - daca s-a sters, false - daca nu
+        strings.remove(0);
+        strings.removeAll(elems);
     }
     
     

@@ -1,5 +1,6 @@
 package learningcollections.maps;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,6 +12,7 @@ public class MapsDemo {
 
     public static void main(String[] args) {
         Map<Integer, EmployeeCustom> employeeMap = new HashMap<>();
+        Collection<EmployeeCustom> values = employeeMap.values(); 
         EmployeeCustom employeeCustom = new EmployeeCustom(1, "Jake");
         EmployeeCustom employeeCustom2 = new EmployeeCustom(1, "Peter");
         EmployeeCustom employeeCustom3 = new EmployeeCustom(1, "John");

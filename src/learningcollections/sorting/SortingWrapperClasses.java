@@ -15,13 +15,25 @@ public class SortingWrapperClasses {
         ArrayList<Integer> al = new ArrayList();
         al.add(201);
         al.add(101);
-        al.add(230);  
+        al.add(230);
+        
+        for(Integer x: al){
+            System.out.println(x);
+        }
+        
+        System.out.println("sortat:");
 
         Collections.sort(al);
-
-        Iterator itr = al.iterator();
-        while (itr.hasNext()) {
-            System.out.println(itr.next());
+        
+//        for (int i = 0; i < al.size(); i++) {
+//            System.out.println(al.get(i));
+//        }
+        
+        for(Integer x: al){
+            System.out.println(x);
         }
+        
+
+
     }
 }

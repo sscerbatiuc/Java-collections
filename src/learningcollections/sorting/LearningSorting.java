@@ -10,6 +10,10 @@ public class LearningSorting {
         al.add(new Student(106, "Stas", 27));
         al.add(new Student(105, "Vlad", 21));
 
+        for (Student st : al) {
+            System.out.println(st.getRollno() + " " + st.getName() + " " + st.getAge());
+        }
+        
         Collections.sort(al);
         for (Student st : al) {
             System.out.println(st.getRollno() + " " + st.getName() + " " + st.getAge());
